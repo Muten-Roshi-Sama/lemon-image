@@ -3,7 +3,7 @@ set -e
 
 BRANCHES=("qcom-msm8974-6.12.y")
 ARCH="arm"
-CROSS_COMPILE="arm-linux-gnueabihf-"
+CROSS_COMPILE="arm-none-linux-gnueabihf-"
 PKG_VERSION="1.0-2"
 CONFIG_LOCALVERSION="-citronics-lemon"
 
@@ -22,7 +22,8 @@ BUILD_BASE="$ROOT_DIR/build"
 for BRANCH in "${BRANCHES[@]}"; do
     VERSION="${BRANCH#qcom-msm8974-}"
     KERNEL_NAME="msm8974-${VERSION}"
-    CONFIG_FILE="${CONFIGS_DIR}/${KERNEL_NAME}.config"
+    CONFIG_FILE="/home/vass/dev/OS/citro/lemon-image/.config"
+    MOD_SYMVERS="/home/vass/dev/OS/citro/lemon-image/Module.symvers" 
     OUTPUT_DIR="${OUTPUT_BASE}/${VERSION}"
     BUILD_DIR="${BUILD_BASE}/${VERSION}"
 
@@ -53,16 +54,15 @@ for BRANCH in "${BRANCHES[@]}"; do
     cp "$CONFIG_FILE" .config
     make olddefconfig
 
+    cp "$MOD_SYMVERS" Module.symvers
+
     echo "🚧 Building kernel .deb packages for $KERNEL_NAME"
     make -j$(nproc) \
          LOCALVERSION=$CONFIG_LOCALVERSION \
          KDEB_PKGVERSION=$PKG_VERSION \
-         deb-pkg
+
 
     # Move packages to output
-    mkdir -p "$OUTPUT_DIR"
-    cd "$BUILD_DIR/.."
-    mv ./*.deb "$OUTPUT_DIR"
 
     echo "✅ Done: $OUTPUT_DIR"
     cd - > /dev/null

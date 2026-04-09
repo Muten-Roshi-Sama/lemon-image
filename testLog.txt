@@ -1,0 +1,500 @@
+Apr 09 13:06:02 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:03 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:06:05 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:06 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:08 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:10 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:06:12 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:13 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:21 NightBlue kdeconnectd[5104]: No uuids found for "C4:35:D9:87:83:3F"
+Apr 09 13:06:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:24 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:24 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:24 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:27 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:28 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:29 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:30 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:31 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:32 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:34 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:06:37 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:39 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:06:43 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:44 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:48 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:48 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:50 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:50 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:51 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:51 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:51 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:53 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:55 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:57 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:06:58 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:06:59 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:07:00 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:00 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:04 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:04 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:05 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:07:05 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:06 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:08 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:08 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:12 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:12 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:13 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:07:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:15 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:16 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:17 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:18 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:20 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:07:20 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:21 NightBlue NetworkManager[2537]: <info>  [1775732841.3213] device (enp198s0f3u1i1): state change: activated -> deactivating (reason 'user-requested', managed-type: 'full')
+Apr 09 13:07:21 NightBlue NetworkManager[2537]: <info>  [1775732841.3224] audit: op="device-disconnect" interface="enp198s0f3u1i1" ifindex=5 pid=4900 uid=1000 result="success"
+Apr 09 13:07:21 NightBlue kdeconnectd[5104]: No uuids found for "F8:AC:65:FC:92:6F"
+Apr 09 13:07:21 NightBlue systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+Apr 09 13:07:21 NightBlue kdeconnectd[5104]: No uuids found for "48:74:12:18:B8:20"
+Apr 09 13:07:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:21 NightBlue systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+Apr 09 13:07:21 NightBlue audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 09 13:07:21 NightBlue NetworkManager[2537]: <info>  [1775732841.3636] device (enp198s0f3u1i1): state change: deactivating -> disconnected (reason 'user-requested', managed-type: 'full')
+Apr 09 13:07:21 NightBlue avahi-daemon[2018]: Withdrawing address record for fe80::88a8:5072:fb63:69a4 on enp198s0f3u1i1.
+Apr 09 13:07:21 NightBlue avahi-daemon[2018]: Leaving mDNS multicast group on interface enp198s0f3u1i1.IPv6 with address fe80::88a8:5072:fb63:69a4.
+Apr 09 13:07:21 NightBlue avahi-daemon[2018]: Interface enp198s0f3u1i1.IPv6 no longer relevant for mDNS.
+Apr 09 13:07:21 NightBlue brave-browser.desktop[9109]: [9110:9137:0409/130721.365579:ERROR:components/sync/engine/get_updates_processor.cc:270] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_NETWORK_CHANGED)
+Apr 09 13:07:21 NightBlue avahi-daemon[2018]: Withdrawing address record for 169.254.156.225 on enp198s0f3u1i1.
+Apr 09 13:07:21 NightBlue avahi-daemon[2018]: Leaving mDNS multicast group on interface enp198s0f3u1i1.IPv4 with address 169.254.156.225.
+Apr 09 13:07:21 NightBlue avahi-daemon[2018]: Interface enp198s0f3u1i1.IPv4 no longer relevant for mDNS.
+Apr 09 13:07:21 NightBlue audit[2182]: NETFILTER_CFG table=firewalld:71 family=1 entries=52 op=nft_unregister_rule pid=2182 subj=system_u:system_r:firewalld_t:s0 comm="firewalld"
+Apr 09 13:07:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:24 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:26 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:26 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:27 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:27 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:27 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:28 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:28 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:29 NightBlue systemd[4592]: Started app-gnome-gnome\x2dwifi\x2dpanel-48485.scope - Application launched by gnome-shell.
+Apr 09 13:07:29 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:07:31 NightBlue systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Apr 09 13:07:31 NightBlue audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 09 13:07:34 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:34 NightBlue audit: BPF prog-id=107 op=UNLOAD
+Apr 09 13:07:34 NightBlue audit: BPF prog-id=106 op=UNLOAD
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue audit: BPF prog-id=123 op=LOAD
+Apr 09 13:07:34 NightBlue audit: BPF prog-id=124 op=LOAD
+Apr 09 13:07:34 NightBlue audit: BPF prog-id=125 op=LOAD
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:07:34 NightBlue systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+Apr 09 13:07:34 NightBlue audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 09 13:07:36 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:37 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:37 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:41 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:07:41 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:42 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:43 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:43 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:44 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:44 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:44 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:46 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:47 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:47 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:47 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:48 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:48 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:07:49 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:52 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:54 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:07:54 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:07:58 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:08:00 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:03 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:03 NightBlue gnome-control-center[48485]: couldn't get token info: The device is not present or unplugged
+Apr 09 13:08:06 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:07 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:08:08 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:08:10 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:12 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:15 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:16 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:18 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:21 NightBlue kdeconnectd[5104]: No uuids found for "43:42:54:56:8A:D2"
+Apr 09 13:08:21 NightBlue kdeconnectd[5104]: No uuids found for "C4:35:D9:87:83:3F"
+Apr 09 13:08:27 NightBlue systemd[4592]: app-gnome-gnome\x2dwifi\x2dpanel-48485.scope: Consumed 6.488s CPU time, 85.4M memory peak.
+Apr 09 13:08:28 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:31 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:08:31 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:32 NightBlue PackageKit[47791]: daemon quit
+Apr 09 13:08:32 NightBlue systemd[1]: packagekit.service: Deactivated successfully.
+Apr 09 13:08:32 NightBlue audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 09 13:08:32 NightBlue systemd[1]: packagekit.service: Consumed 2.771s CPU time, 234.3M memory peak.
+Apr 09 13:08:32 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:33 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:33 NightBlue systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Apr 09 13:08:33 NightBlue audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 09 13:08:33 NightBlue audit: BPF prog-id=123 op=UNLOAD
+Apr 09 13:08:36 NightBlue systemd[1]: Starting packagekit.service - PackageKit Daemon...
+Apr 09 13:08:36 NightBlue PackageKit[48811]: daemon start
+Apr 09 13:08:36 NightBlue systemd[1]: Started packagekit.service - PackageKit Daemon.
+Apr 09 13:08:36 NightBlue audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 09 13:08:37 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:37 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:37 NightBlue PackageKit[48811]: search-file transaction /13050_cccecbdb from uid 1000 finished with success after 1438ms
+Apr 09 13:08:38 NightBlue gvfsd[16273]: 2026-04-09 13:08:38,514:wsdd WARNING(pid 16273): could not fetch metadata from: http://[fe80::33d3:6520:ccb2:8c2d%wlp2s0]:5357/ac1b29e7-6873-4099-8d27-0a84fb032944/ <urlopen error timed out>
+Apr 09 13:08:40 NightBlue gvfsd[16273]: 2026-04-09 13:08:40,518:wsdd WARNING(pid 16273): could not fetch metadata from: http://172.17.88.162:5357/ac1b29e7-6873-4099-8d27-0a84fb032944/ <urlopen error timed out>
+Apr 09 13:08:40 NightBlue PackageKit[48811]: search-file transaction /13051_aeeaecec from uid 1000 finished with success after 144ms
+Apr 09 13:08:43 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:43 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:08:44 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:47 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:08:49 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:54 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:57 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:59 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:08:59 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:00 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:01 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:02 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:04 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:09 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:09 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:10 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:09:11 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:15 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:16 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:17 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:17 NightBlue systemd[47912]: Created slice background.slice - User Background Tasks Slice.
+Apr 09 13:09:17 NightBlue systemd[47912]: Starting systemd-tmpfiles-clean.service - Cleanup of User's Temporary Files and Directories...
+Apr 09 13:09:17 NightBlue systemd[47912]: Finished systemd-tmpfiles-clean.service - Cleanup of User's Temporary Files and Directories.
+Apr 09 13:09:19 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:20 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:21 NightBlue kdeconnectd[5104]: No uuids found for "AC:C0:48:6D:7B:3E"
+Apr 09 13:09:21 NightBlue kdeconnectd[5104]: No uuids found for "43:42:54:56:8A:D2"
+Apr 09 13:09:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:24 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:25 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:25 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:26 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:27 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:09:27 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:27 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:27 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:29 NightBlue gvfsd[16273]: 2026-04-09 13:09:29,394:wsdd WARNING(pid 16273): could not fetch metadata from: http://[fe80::8174:d636:b41c:e30e%wlp2s0]:5357/3ad4a495-c393-491c-aae8-7aa73974eda3/ <urlopen error timed out>
+Apr 09 13:09:30 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:31 NightBlue gvfsd[16273]: 2026-04-09 13:09:31,398:wsdd WARNING(pid 16273): could not fetch metadata from: http://172.17.84.93:5357/3ad4a495-c393-491c-aae8-7aa73974eda3/ <urlopen error timed out>
+Apr 09 13:09:33 NightBlue gvfsd[16273]: 2026-04-09 13:09:33,403:wsdd WARNING(pid 16273): could not fetch metadata from: http://[fe80::8174:d636:b41c:e30e%wlp2s0]:5357/3ad4a495-c393-491c-aae8-7aa73974eda3/ <urlopen error timed out>
+Apr 09 13:09:34 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:35 NightBlue gvfsd[16273]: 2026-04-09 13:09:35,407:wsdd WARNING(pid 16273): could not fetch metadata from: http://172.17.84.93:5357/3ad4a495-c393-491c-aae8-7aa73974eda3/ <urlopen error timed out>
+Apr 09 13:09:38 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:41 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:42 NightBlue kernel: usb 5-1: USB disconnect, device number 2
+Apr 09 13:09:42 NightBlue kernel: cdc_subset 5-1:1.1 enp198s0f3u1i1: unregister 'cdc_subset' usb-0000:c6:00.3-1, Linux Device
+Apr 09 13:09:42 NightBlue NetworkManager[2537]: <info>  [1775732982.0966] device (enp198s0f3u1i1): state change: disconnected -> unmanaged (reason 'unmanaged-link-not-init', managed-type: 'removed')
+Apr 09 13:09:42 NightBlue ModemManager[2169]: <msg> [base-manager] port enp198s0f3u1i1 released by device '/sys/devices/pci0000:00/0000:00:08.3/0000:c6:00.3/usb5/5-1'
+Apr 09 13:09:42 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:45 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:45 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:46 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:09:50 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:50 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:56 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:09:57 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:58 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:09:59 NightBlue kernel: usb 1-1: new high-speed USB device number 7 using xhci_hcd
+Apr 09 13:09:59 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:09:59 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:00 NightBlue kernel: usb 1-1: New USB device found, idVendor=0525, idProduct=a4a2, bcdDevice= 6.12
+Apr 09 13:10:00 NightBlue kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Apr 09 13:10:00 NightBlue kernel: usb 1-1: Product: RNDIS/Ethernet Gadget
+Apr 09 13:10:00 NightBlue kernel: usb 1-1: Manufacturer: Linux 6.12.0-citronics-lemon with ci_hdrc_msm
+Apr 09 13:10:00 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:00 NightBlue kernel: cdc_subset 1-1:1.0: probe with driver cdc_subset failed with error -22
+Apr 09 13:10:00 NightBlue kernel: cdc_ether 1-1:1.0 usb0: register 'cdc_ether' at usb-0000:c4:00.3-1, CDC Ethernet Device, 86:b6:31:1c:ee:04
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.0944] manager: (usb0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/10)
+Apr 09 13:10:00 NightBlue mtp-probe[48975]: checking bus 1, device 7: "/sys/devices/pci0000:00/0000:00:08.1/0000:c4:00.3/usb1/1-1"
+Apr 09 13:10:00 NightBlue mtp-probe[48975]: bus: 1, device: 7 was not an MTP device
+Apr 09 13:10:00 NightBlue boltd[2181]: probing: started [1000]
+Apr 09 13:10:00 NightBlue kernel: cdc_ether 1-1:1.0 enp196s0f3u1: renamed from usb0
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1501] device (usb0): interface index 6 renamed iface from 'usb0' to 'enp196s0f3u1'
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1621] device (enp196s0f3u1): state change: unmanaged -> unavailable (reason 'managed', managed-type: 'external')
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1656] settings: (enp196s0f3u1): created default wired connection 'Wired connection 2'
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1659] device (enp196s0f3u1): carrier: link connected
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1661] device (enp196s0f3u1): state change: unavailable -> disconnected (reason 'carrier-changed', managed-type: 'full')
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1687] policy: auto-activating connection 'Wired connection 2' (8a316e36-45e0-36be-9f04-6163dbae1749)
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1690] device (enp196s0f3u1): Activation: starting connection 'Wired connection 2' (8a316e36-45e0-36be-9f04-6163dbae1749)
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1690] device (enp196s0f3u1): state change: disconnected -> prepare (reason 'none', managed-type: 'full')
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1692] device (enp196s0f3u1): state change: prepare -> config (reason 'none', managed-type: 'full')
+Apr 09 13:10:00 NightBlue mtp-probe[48989]: checking bus 1, device 7: "/sys/devices/pci0000:00/0000:00:08.1/0000:c4:00.3/usb1/1-1"
+Apr 09 13:10:00 NightBlue mtp-probe[48989]: bus: 1, device: 7 was not an MTP device
+Apr 09 13:10:00 NightBlue audit[2182]: NETFILTER_CFG table=firewalld:72 family=1 entries=52 op=nft_register_rule pid=2182 subj=system_u:system_r:firewalld_t:s0 comm="firewalld"
+Apr 09 13:10:00 NightBlue ModemManager[2169]: <wrn> [plugin-manager] task 7: port context already scheduled
+Apr 09 13:10:00 NightBlue NetworkManager[2537]: <info>  [1775733000.1909] device (enp196s0f3u1): state change: config -> ip-config (reason 'none', managed-type: 'full')
+Apr 09 13:10:00 NightBlue avahi-daemon[2018]: Joining mDNS multicast group on interface enp196s0f3u1.IPv6 with address fe80::9015:e7be:e1d2:2b25.
+Apr 09 13:10:00 NightBlue avahi-daemon[2018]: New relevant interface enp196s0f3u1.IPv6 for mDNS.
+Apr 09 13:10:00 NightBlue avahi-daemon[2018]: Registering new address record for fe80::9015:e7be:e1d2:2b25 on enp196s0f3u1.*.
+Apr 09 13:10:00 NightBlue avahi-daemon[2018]: Joining mDNS multicast group on interface enp196s0f3u1.IPv4 with address 169.254.107.111.
+Apr 09 13:10:00 NightBlue avahi-daemon[2018]: New relevant interface enp196s0f3u1.IPv4 for mDNS.
+Apr 09 13:10:00 NightBlue avahi-daemon[2018]: Registering new address record for 169.254.107.111 on enp196s0f3u1.IPv4.
+Apr 09 13:10:01 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:01 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:02 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:02 NightBlue NetworkManager[2537]: <info>  [1775733002.1927] device (enp196s0f3u1): state change: ip-config -> ip-check (reason 'none', managed-type: 'full')
+Apr 09 13:10:02 NightBlue systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+Apr 09 13:10:02 NightBlue systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+Apr 09 13:10:02 NightBlue audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 09 13:10:02 NightBlue NetworkManager[2537]: <info>  [1775733002.2371] device (enp196s0f3u1): state change: ip-check -> secondaries (reason 'none', managed-type: 'full')
+Apr 09 13:10:02 NightBlue NetworkManager[2537]: <info>  [1775733002.2375] device (enp196s0f3u1): state change: secondaries -> activated (reason 'none', managed-type: 'full')
+Apr 09 13:10:02 NightBlue NetworkManager[2537]: <info>  [1775733002.2379] device (enp196s0f3u1): Activation: successful, device activated.
+Apr 09 13:10:02 NightBlue systemd[1]: iscsi.service: Unit cannot be reloaded because it is inactive.
+Apr 09 13:10:03 NightBlue boltd[2181]: probing: timeout, done: [2971772] (2000000)
+Apr 09 13:10:03 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:03 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:04 NightBlue ModemManager[2169]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:08.1/0000:c4:00.3/usb1/1-1': not supported by any plugin
+Apr 09 13:10:06 NightBlue NetworkManager[2537]: <info>  [1775733006.1880] device (enp196s0f3u1): state change: activated -> unavailable (reason 'carrier-changed', managed-type: 'full')
+Apr 09 13:10:06 NightBlue avahi-daemon[2018]: Withdrawing address record for 169.254.107.111 on enp196s0f3u1.
+Apr 09 13:10:06 NightBlue avahi-daemon[2018]: Leaving mDNS multicast group on interface enp196s0f3u1.IPv4 with address 169.254.107.111.
+Apr 09 13:10:06 NightBlue avahi-daemon[2018]: Interface enp196s0f3u1.IPv4 no longer relevant for mDNS.
+Apr 09 13:10:06 NightBlue avahi-daemon[2018]: Withdrawing address record for fe80::9015:e7be:e1d2:2b25 on enp196s0f3u1.
+Apr 09 13:10:06 NightBlue avahi-daemon[2018]: Leaving mDNS multicast group on interface enp196s0f3u1.IPv6 with address fe80::9015:e7be:e1d2:2b25.
+Apr 09 13:10:06 NightBlue avahi-daemon[2018]: Interface enp196s0f3u1.IPv6 no longer relevant for mDNS.
+Apr 09 13:10:06 NightBlue audit[2182]: NETFILTER_CFG table=firewalld:73 family=1 entries=52 op=nft_unregister_rule pid=2182 subj=system_u:system_r:firewalld_t:s0 comm="firewalld"
+Apr 09 13:10:06 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:11 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.7866] device (enp196s0f3u1): carrier: link connected
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.7870] device (enp196s0f3u1): state change: unavailable -> disconnected (reason 'carrier-changed', managed-type: 'full')
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.7880] policy: auto-activating connection 'Wired connection 2' (8a316e36-45e0-36be-9f04-6163dbae1749)
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.7885] device (enp196s0f3u1): Activation: starting connection 'Wired connection 2' (8a316e36-45e0-36be-9f04-6163dbae1749)
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.7886] device (enp196s0f3u1): state change: disconnected -> prepare (reason 'none', managed-type: 'full')
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.7888] device (enp196s0f3u1): state change: prepare -> config (reason 'none', managed-type: 'full')
+Apr 09 13:10:13 NightBlue audit[2182]: NETFILTER_CFG table=firewalld:74 family=1 entries=52 op=nft_register_rule pid=2182 subj=system_u:system_r:firewalld_t:s0 comm="firewalld"
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.8093] device (enp196s0f3u1): state change: config -> ip-config (reason 'none', managed-type: 'full')
+Apr 09 13:10:13 NightBlue avahi-daemon[2018]: Joining mDNS multicast group on interface enp196s0f3u1.IPv6 with address fe80::9015:e7be:e1d2:2b25.
+Apr 09 13:10:13 NightBlue avahi-daemon[2018]: New relevant interface enp196s0f3u1.IPv6 for mDNS.
+Apr 09 13:10:13 NightBlue avahi-daemon[2018]: Registering new address record for fe80::9015:e7be:e1d2:2b25 on enp196s0f3u1.*.
+Apr 09 13:10:13 NightBlue avahi-daemon[2018]: Joining mDNS multicast group on interface enp196s0f3u1.IPv4 with address 169.254.107.111.
+Apr 09 13:10:13 NightBlue avahi-daemon[2018]: New relevant interface enp196s0f3u1.IPv4 for mDNS.
+Apr 09 13:10:13 NightBlue avahi-daemon[2018]: Registering new address record for 169.254.107.111 on enp196s0f3u1.IPv4.
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.9641] device (enp196s0f3u1): state change: ip-config -> ip-check (reason 'none', managed-type: 'full')
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.9655] device (enp196s0f3u1): state change: ip-check -> secondaries (reason 'none', managed-type: 'full')
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.9656] device (enp196s0f3u1): state change: secondaries -> activated (reason 'none', managed-type: 'full')
+Apr 09 13:10:13 NightBlue NetworkManager[2537]: <info>  [1775733013.9659] device (enp196s0f3u1): Activation: successful, device activated.
+Apr 09 13:10:13 NightBlue systemd[1]: iscsi.service: Unit cannot be reloaded because it is inactive.
+Apr 09 13:10:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:15 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:16 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:17 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:18 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:19 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:20 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:21 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:24 NightBlue systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Apr 09 13:10:24 NightBlue audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 09 13:10:25 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:26 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:27 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:28 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:28 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:28 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:30 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:30 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:31 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:31 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:35 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:36 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:38 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:39 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:40 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:42 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:44 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:48 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:50 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:51 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:51 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:51 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:51 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:53 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:54 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:55 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:10:57 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:10:59 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:00 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:01 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:03 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:03 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:03 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:04 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:04 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:07 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:11 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:12 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:13 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:18 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:18 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:19 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:26 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:11:26 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:26 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:28 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:11:28 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:29 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:11:29 NightBlue gvfsd[16273]: 2026-04-09 13:11:29,201:wsdd WARNING(pid 16273): could not fetch metadata from: http://[fe80::8174:d636:b41c:e30e%wlp2s0]:5357/3ad4a495-c393-491c-aae8-7aa73974eda3/ <urlopen error timed out>
+Apr 09 13:11:30 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:31 NightBlue gvfsd[16273]: 2026-04-09 13:11:31,204:wsdd WARNING(pid 16273): could not fetch metadata from: http://172.17.84.93:5357/3ad4a495-c393-491c-aae8-7aa73974eda3/ <urlopen error timed out>
+Apr 09 13:11:31 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:33 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:34 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:11:35 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:35 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:11:35 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:37 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:39 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:40 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:40 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:44 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:45 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:45 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:46 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:46 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:47 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:48 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:49 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:50 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:50 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:50 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:53 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:55 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:59 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:11:59 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:00 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:04 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:05 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:12:05 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:06 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:08 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:08 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:11 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:13 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:13 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:18 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:21 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:23 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:23 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:12:24 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:24 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:24 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:26 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:29 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:12:30 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:31 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:32 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:34 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:36 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:36 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:37 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:38 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:40 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:44 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:51 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:53 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:53 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:12:53 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:55 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:55 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:12:57 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:00 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:01 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:03 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:03 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:03 NightBlue pipewire[4896]: mod.raop-sink: sess.latency.msec 250.000000 should be an integer multiple of rtp.ptime 7.981859
+Apr 09 13:13:05 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:05 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:06 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:11 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:11 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:11 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:12 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
+Apr 09 13:13:14 NightBlue kernel: ath11k_pci 0000:02:00.0: msdu_done bit in attention is not set
