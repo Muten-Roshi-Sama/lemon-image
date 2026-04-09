@@ -1,0 +1,1 @@
+savedcmd_/home/vass/dev/OS/citro/1_embedded_LKM/Module.symvers :=  scripts/mod/modpost -M -m       -o /home/vass/dev/OS/citro/1_embedded_LKM/Module.symvers -n -T /home/vass/dev/OS/citro/1_embedded_LKM/modules.order -i Module.symvers -e 

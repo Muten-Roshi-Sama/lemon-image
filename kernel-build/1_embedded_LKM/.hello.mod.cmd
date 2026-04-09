@@ -1,0 +1,1 @@
+savedcmd_/home/vass/dev/OS/citro/1_embedded_LKM/hello.mod := printf '%s\n'   hello.o | awk '!x[$$0]++ { print("/home/vass/dev/OS/citro/1_embedded_LKM/"$$0) }' > /home/vass/dev/OS/citro/1_embedded_LKM/hello.mod

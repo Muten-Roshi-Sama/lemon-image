@@ -1,0 +1,1 @@
+savedcmd_/home/vass/dev/OS/citro/1_embedded_LKM/hello.ko := arm-none-linux-gnueabihf-ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/vass/dev/OS/citro/1_embedded_LKM/hello.ko /home/vass/dev/OS/citro/1_embedded_LKM/hello.o /home/vass/dev/OS/citro/1_embedded_LKM/hello.mod.o /home/vass/dev/OS/citro/1_embedded_LKM/.module-common.o
