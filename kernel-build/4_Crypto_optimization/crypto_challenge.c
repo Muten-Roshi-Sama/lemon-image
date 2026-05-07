@@ -28,6 +28,9 @@
 #define THERMAL_RESUME_MILLIC 62000
 #define MAX_SAMPLES (BENCH_DURATION_SEC * 1000 / SAMPLE_PERIOD_MS)
 
+
+#define BATCH 32
+
 static struct proc_dir_entry *proc_dir;
 static struct proc_dir_entry *proc_file;
 
@@ -180,9 +183,12 @@ static int worker_fn(void *arg)
             continue;
         }
 
-        do_crypto(w);
-        atomic64_inc(&ctx.ops);        // increase global
-        atomic64_inc(&w->local_ops);   // increase LOCAL worker ops
+
+        int i;
+        for (i = 0; i < BATCH; i++) { do_crypto(w); }
+
+        atomic64_add(BATCH, &ctx.ops);         // increase global
+        atomic64_add(BATCH, &w->local_ops);   // increase LOCAL worker ops
 
         /* Make sure we reschedule to avoid lockups under heavy loads */
         cond_resched();
