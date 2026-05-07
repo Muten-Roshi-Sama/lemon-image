@@ -1,13 +1,13 @@
 #define pr_fmt(fmt) "kernel_monster: " fmt
 
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <linux/init.h>         // __init, __exit macros
+#include <linux/jiffies.h>      // jiffies, kernel time counters
+#include <linux/kernel.h>       // pr_info, printk
+#include <linux/module.h>       // MODULE_*, module_init, module_exit
+#include <linux/proc_fs.h>      // procfs interface
+#include <linux/seq_file.h>     // seq_file for proc read
+#include <linux/string.h>       // strscpy
+#include <linux/workqueue.h>    // delayed_work, workqueues
 
 MODULE_LICENSE("VASS");
 MODULE_AUTHOR("ECAM");
