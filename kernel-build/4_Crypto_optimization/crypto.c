@@ -29,16 +29,48 @@
 static struct proc_dir_entry *proc_dir;
 static struct proc_dir_entry *proc_file;
 
+
+// ------- Callup Logic --------
+/*
+    1. mod_init : 
+        1.1 start_worker   : 
+            - starts all the workers
+            - allocate buffers, create keys, crypto requests...
+            - binds worker_fn on a thread
+
+
+    2. control_fn  : 
+        - runs  on a thread
+        - starts sampling 
+
+
+    2. worker_fn :
+        - do_crypto : encrypts one buffer (= one operation towards the score)
+        - atomic64_inc : 
+
+
+*/
+
+
+
+
+
+
+
+
+// ------- structures -------
 struct worker {
-    struct task_struct *task;
-    struct crypto_skcipher *tfm;
-    struct skcipher_request *req;
+    /* Each worker needs its own crypto state and own execution context.  
+    */
+    struct task_struct *task;       // The kernel thread handle. Used to stop, wake, or bind the thread.
+    struct crypto_skcipher *tfm;   // The crypto “transform” object. Represents the AES-CBC cipher configuration.
+    struct skcipher_request *req; // A request object for a single encryption operation. Reused to avoid reallocating each time.
 
-    u8 *buf;
-    u8 key[KEY_SIZE];
-    u8 iv[IV_SIZE];
+    u8 *buf;             // The data buffer that gets encrypted.
+    u8 key[KEY_SIZE];   // AES key, 16 bytes for 128-bit AES.
+    u8 iv[IV_SIZE];    // Initialization vector for CBC mode.
 
-    int cpu_id;
+    int cpu_id;    // Which CPU this worker should run on. Used with kthread_bind().
 };
 
 struct sample {
@@ -46,29 +78,29 @@ struct sample {
     int temp[MAX_CORES];
 };
 
-// GLOBAL STATE (shared accross all threads)
 struct challenge_ctx {
-    struct worker workers[MAX_CORES];
-    struct thermal_zone_device *tz[MAX_CORES];
+    /* GLOBAL STATE (shared accross all threads)
+    */
+    struct worker workers[MAX_CORES];           // The 4 worker records.
+    struct thermal_zone_device *tz[MAX_CORES]; // Thermal zones for the 4 CPU cores.
 
-    struct sample samples[MAX_SAMPLES];
-    int sample_count;
+    struct sample samples[MAX_SAMPLES];      // Logged temperature / ops samples over time.
+    int sample_count;                       // How many samples are valid.
 
-    atomic64_t ops;
+    atomic64_t ops;         // Total number of crypto ops completed. Atomic because multiple threads increment it concurrently.
 
-    int worker_count;
-    bool run;
-    bool stop;
+    int worker_count;     // Number of active workers.
+    bool run;            // “Green light” for workers to compute.
+    bool stop;          // Global stop flag.
 
-    int duty_on_ms;
-    int duty_off_ms;
+    int duty_on_ms;     // How long workers are allowed to run
+    int duty_off_ms;   // How long they must sleep.
 
-    unsigned long start_jiffies;
+    unsigned long start_jiffies;      // Benchmark start time.
+    struct timer_list sample_timer;  // Timer used to call the sampling function periodically.
 
-    struct timer_list sample_timer;
-
-    u64 final_score;
-    int invalid;
+    u64 final_score;  // Cached final score.
+    int invalid;     // Set if any thermal limit is exceeded.
 };
 
 static struct challenge_ctx ctx;
@@ -77,12 +109,14 @@ static struct challenge_ctx ctx;
 
 static int do_crypto(struct worker *w)
 {
+    // 1. Prepare the buffer.
     struct scatterlist sg;
-
     sg_init_one(&sg, w->buf, WORK_SIZE);
 
+    // 2. Configure the encryption request.
     skcipher_request_set_crypt(w->req, &sg, &sg, WORK_SIZE, w->iv);
 
+    // 3. Encrypt the buffer
     return crypto_skcipher_encrypt(w->req);
 }
 
@@ -116,8 +150,10 @@ static int worker_fn(void *arg)
 
 static int start_worker(int cpu)
 {
+    // 1. Allocate buffer.
     struct worker *w = &ctx.workers[cpu];
 
+    // 2. Set key and IV.
     memset(w, 0, sizeof(*w));
     w->cpu_id = cpu;
 
@@ -130,20 +166,27 @@ static int start_worker(int cpu)
     memset(w->key, 0x11, KEY_SIZE);
     memset(w->iv, 0x22, IV_SIZE);
 
+    // 3. Select AES-CBC cipher.
     w->tfm = crypto_alloc_skcipher("cbc(aes)", 0, 0);
     if (IS_ERR(w->tfm))
         return PTR_ERR(w->tfm);
 
     crypto_skcipher_setkey(w->tfm, w->key, KEY_SIZE);
 
+    // 4. Create crypto request.
     w->req = skcipher_request_alloc(w->tfm, GFP_KERNEL);
     if (!w->req)
         return -ENOMEM;
 
-    w->task = kthread_create(worker_fn, w, "crypto_%d", cpu);
+    // 5. Create kernel thread.
+    w->task = kthread_create(worker_fn, w, "crypto_%d", cpu);   //! calls worker_fn()
     if (IS_ERR(w->task))
         return PTR_ERR(w->task);
+    
+    // 6. Bind it to a CPU core.
     kthread_bind(w->task, cpu); /* Bind *before* starting thread */
+
+    // 7. Wake it up.
     wake_up_process(w->task);
 
     return 0;
@@ -205,25 +248,26 @@ static int read_temp(int cpu)
 
 static void sample_fn(struct timer_list *t)
 {
+    // 1. Read operation count
     struct sample *s;
     int i;
 
+    // 2. Return if Max samples per cycle is reached
     if (ctx.sample_count >= MAX_SAMPLES)
         return;
 
+    // 3. Add one to sample count
     s = &ctx.samples[ctx.sample_count++];
-
     s->ops = atomic64_read(&ctx.ops);
 
+    // 4. Read each core T°
     for (i = 0; i < MAX_CORES; i++) {
         int temp = read_temp(i);
-
         s->temp[i] = temp;
-
-        if (temp > THERMAL_LIMIT_MILLIC)
+        if (temp > THERMAL_LIMIT_MILLIC) // SET flag if t° exceeds
             ctx.invalid = 1;
     }
-
+    // 5. Reschedule itself 
     mod_timer(&ctx.sample_timer, jiffies + msecs_to_jiffies(SAMPLE_PERIOD_MS));
 }
 
@@ -295,21 +339,23 @@ static void compute_score(void)
 
 static int control_fn(void *arg)
 {
+    // 1. Start Sampling
     // int i;
     ctx.start_jiffies = jiffies;
-
     start_sampling();
-
     ctx.stop = false;
 
+    // 2. Runs until benchmark timer is over.
     while (!kthread_should_stop()) {
 
+        // Interrupt 1 :cpu overheats
         if (ctx.stop) {
             set_current_state(TASK_INTERRUPTIBLE);
             schedule_timeout_interruptible(msecs_to_jiffies(10));
             continue;
         }
 
+        // Interrupt 2 : time window ends
         if (time_after(jiffies, ctx.start_jiffies + BENCH_DURATION_SEC * HZ)) {
 
             ctx.run = false;
@@ -348,8 +394,7 @@ static struct task_struct *ctrl_task;
 
 /* ---------------- DEBUGFS ---------------- */
 
-static ssize_t stats_read(struct file *f, char __user *buf,
-                          size_t len, loff_t *ppos)
+static ssize_t stats_read(struct file *f, char __user *buf, size_t len, loff_t *ppos)
 {
     char out[256];
     int l;
@@ -396,10 +441,10 @@ static int __init mod_init(void)
 
     // 4. Call the start_worker procedure to launch the worker threads
     for (i = 0; i < MAX_CORES; i++)
-        start_worker(i);
+        start_worker(i);                //! start_worker
 
     // 5. Create and run the control thread
-    ctrl_task = kthread_run(control_fn, NULL, "ctrl");
+    ctrl_task = kthread_run(control_fn, NULL, "ctrl");  //! control_fn
 
     pr_info("crypto_thermal_challenge loaded\n");
     pr_info("Benchmark started\n");
@@ -408,23 +453,25 @@ static int __init mod_init(void)
 
 static void __exit mod_exit(void)
 {
+    // 1. Stop the control thread
     int i;
-
     if (ctrl_task) {
         // pr_info("Stopping control thread...\n");
         kthread_stop(ctrl_task);
         ctrl_task = NULL;
         // pr_info("Stopping control thread: done\n");
     }
-
     stop_sampling();
 
+
+    // 2. Stop the worker threads
     for (i = 0; i < MAX_CORES; i++) {
         // pr_info("Stopping thread #%d...\n", i);
         stop_worker(i);
         // pr_info("Stopping thread #%d: done\n", i);
     }
 
+    // 3. Remove the procfs entry It is important to stop the threads in one single place, here when removing the module from the kernel.
     if (proc_file)
         remove_proc_entry("stats", proc_dir);
 
