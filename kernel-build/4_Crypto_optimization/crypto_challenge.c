@@ -425,7 +425,7 @@ static int control_fn(void *arg)
             // Deactivate Workers
             for (i = 0; i < MAX_CORES; i++) {
                 struct worker *w = &ctx.workers[i];
-                w->active = true;
+                w->active = false;
             }
             continue;
         }
