@@ -24,6 +24,8 @@
 #define SAMPLE_PERIOD_MS 100
 #define BENCH_DURATION_SEC 60
 #define THERMAL_LIMIT_MILLIC 65000
+#define THERMAL_STOP_MILLIC 63000
+#define THERMAL_RESUME_MILLIC 62000
 #define MAX_SAMPLES (BENCH_DURATION_SEC * 1000 / SAMPLE_PERIOD_MS)
 
 static struct proc_dir_entry *proc_dir;
@@ -33,21 +35,44 @@ static struct proc_dir_entry *proc_file;
 // ------- Callup Logic --------
 /*
     1. mod_init : 
-        1.1 start_worker   : 
+        1.1 Init global Context
+            - set the default duty cycle
+            - locate thermal zones
+            - `read_stat()`    : create procfs entry
+            - `start_worker()` :
+            - `control_fn()`   : bind to thread
+
+        1.2 start_worker()   : 
             - starts all the workers
             - allocate buffers, create keys, crypto requests...
-            - binds worker_fn on a thread
+            - `worker_fn()` : binds on a thread (and wakeup thread)
 
 
     2. control_fn  : 
         - runs  on a thread
-        - starts sampling 
+        - starts sampling timer
 
+        2.1 While : 
+        - Interrupts iff CPU overheat (stop flag) or benchmark timer ended.
+        - Regulation :
+            - ctx.run : wakes up worker threads
 
-    2. worker_fn :
-        - do_crypto : encrypts one buffer (= one operation towards the score)
-        - atomic64_inc : 
+        2.2 Sample_fn :
+            - timer callback called every 100ms
+            - reads core temp and set stop flag if t° exceeded.
 
+        2.3 worker_fn :
+            - do_crypto    : encrypts one buffer (= one operation towards the score)
+            - increments ctx.ops.
+            - atomic64_inc : 
+
+    
+    3.  mod_exit
+        - stop the control thread
+        - stop all worker threads
+        - stop sampling
+        - remove the procfs entry
+        - free all crypto resources and buffers
 
 */
 
@@ -71,6 +96,22 @@ struct worker {
     u8 iv[IV_SIZE];    // Initialization vector for CBC mode.
 
     int cpu_id;    // Which CPU this worker should run on. Used with kthread_bind().
+
+
+    // -----
+    atomic64_t local_ops;            // per-worker throughput
+
+    int current_temp;        // current t°
+    int max_temp;           // hottest point reached
+
+    u64 last_ops;           // last ops time
+    u64 ops_per_sec;        // instantaneous throughput
+
+    bool active;
+
+    unsigned long sleep_count;  // how often throttled
+    unsigned long run_count;    // active ratio
+
 };
 
 struct sample {
@@ -125,12 +166,13 @@ static int do_crypto(struct worker *w)
 static int worker_fn(void *arg)
 {
     struct worker *w = arg;
+    w->active = true;
 
     // pr_info("worker %d started\n", w->cpu_id);
 
     while (!kthread_should_stop()) {
 
-        if (!ctx.run) {
+        if (!w->active) {
             set_current_state(TASK_INTERRUPTIBLE);
             /* Simple schedule() call makes the thread starve,
              * misses the wakeup signal somehow. */
@@ -139,7 +181,8 @@ static int worker_fn(void *arg)
         }
 
         do_crypto(w);
-        atomic64_inc(&ctx.ops);
+        atomic64_inc(&ctx.ops);        // increase global
+        atomic64_inc(&w->local_ops);   // increase LOCAL worker ops
 
         /* Make sure we reschedule to avoid lockups under heavy loads */
         cond_resched();
@@ -262,12 +305,38 @@ static void sample_fn(struct timer_list *t)
 
     // 4. Read each core T°
     for (i = 0; i < MAX_CORES; i++) {
+
+        struct worker *w = &ctx.workers[i];
         int temp = read_temp(i);
+
+        /* Store sample history */
         s->temp[i] = temp;
-        if (temp > THERMAL_LIMIT_MILLIC) // SET flag if t° exceeds
+
+        /* Worker telemetry */
+        w->current_temp = temp;
+
+        if (temp > w->max_temp)
+            w->max_temp = temp;
+
+        /* Per-worker throughput */
+        {
+            u64 local_ops = atomic64_read(&w->local_ops);
+            u64 delta = local_ops - w->last_ops;
+
+            w->ops_per_sec =
+                delta * 1000 / SAMPLE_PERIOD_MS;
+
+            w->last_ops = local_ops;
+        }
+
+        /* Thermal protection */
+        if (temp >= THERMAL_LIMIT_MILLIC) {
             ctx.invalid = 1;
+            // ctx.stop = true; // done in control_fn
+        }
     }
-    // 5. Reschedule itself 
+
+    // 6. Reschedule itself 
     mod_timer(&ctx.sample_timer, jiffies + msecs_to_jiffies(SAMPLE_PERIOD_MS));
 }
 
@@ -340,22 +409,43 @@ static void compute_score(void)
 static int control_fn(void *arg)
 {
     // 1. Start Sampling
-    // int i;
+    int i;
     ctx.start_jiffies = jiffies;
     start_sampling();
     ctx.stop = false;
+    static unsigned long last_log=0;
 
-    // 2. Runs until benchmark timer is over.
+    // =========== 2. Runs until =========== 
     while (!kthread_should_stop()) {
 
-        // Interrupt 1 :cpu overheats
+        // Interrupt 1 : default interrupt
         if (ctx.stop) {
             set_current_state(TASK_INTERRUPTIBLE);
             schedule_timeout_interruptible(msecs_to_jiffies(10));
+            // Deactivate Workers
+            for (i = 0; i < MAX_CORES; i++) {
+                struct worker *w = &ctx.workers[i];
+                w->active = true;
+            }
             continue;
         }
 
-        // Interrupt 2 : time window ends
+        // Interrupt 2 :cpu overheats
+        if (ctx.invalid) {
+            ctx.stop = false;    // will then default to Interrupt 1
+            stop_sampling();
+
+            pr_info("Benchmark stopped (thermal).\n");
+
+            compute_score();
+            pr_info("Final score: %lld, operations: %lld\n",
+                    ctx.final_score,
+                    atomic64_read(&ctx.ops));
+            continue;
+        }
+
+
+        // Interrupt 3 : benchmark timer is over.
         if (time_after(jiffies, ctx.start_jiffies + BENCH_DURATION_SEC * HZ)) {
 
             ctx.run = false;
@@ -373,18 +463,47 @@ static int control_fn(void *arg)
 
         /* ------------------
          * --- REGULATION ---
-         * vvvvvvvvvvvvvvvvvv */
+         */
+        for (i = 0; i < MAX_CORES; i++) {
 
-        // duty cycle
-        ctx.run = true;
-        msleep(ctx.duty_on_ms);
+            struct worker *w = &ctx.workers[i];
 
-        ctx.run = false;
-        msleep(ctx.duty_off_ms);
+            // Simple per-core thermal regulation
+            if (w->current_temp >= THERMAL_STOP_MILLIC) w->active = false;
+            else if (w->current_temp <= THERMAL_RESUME_MILLIC) w->active = true;
+        }
 
-        /* ^^^^^^^^^^^^^^^^^^
-         * --- REGULATION ---
-         * ------------------ */
+        /* Small regulation cycle delay */
+        msleep(5);
+
+        // DEBUG
+        if (time_after(jiffies, last_log + HZ)) {
+            pr_info("[t+%5lu ms] OPS=%lld\n", jiffies_to_msecs(jiffies - ctx.start_jiffies), atomic64_read(&ctx.ops));
+            pr_info(
+                "CPU0=%d(%d) CPU1=%d(%d) CPU2=%d(%d) CPU3=%d(%d)\n",
+                ctx.workers[0].current_temp,
+                ctx.workers[0].active,
+
+                ctx.workers[1].current_temp,
+                ctx.workers[1].active,
+
+                ctx.workers[2].current_temp,
+                ctx.workers[2].active,
+
+                ctx.workers[3].current_temp,
+                ctx.workers[3].active
+            );
+
+            pr_info(
+                "OPS=%lld SCORE=%lld\n",
+                atomic64_read(&ctx.ops),
+                ctx.final_score
+            );
+
+            last_log = jiffies;
+        }
+        
+
     }
 
     return 0;
@@ -435,7 +554,7 @@ static int __init mod_init(void)
     if (!proc_dir)
         return -ENOMEM;
 
-    proc_file = proc_create("stats", 0444, proc_dir, &stats_fops);
+    proc_file = proc_create("stats", 0444, proc_dir, &stats_fops);  //! read_stat
     if (!proc_file)
         return -ENOMEM;
 
@@ -447,6 +566,7 @@ static int __init mod_init(void)
     ctrl_task = kthread_run(control_fn, NULL, "ctrl");  //! control_fn
 
     pr_info("crypto_thermal_challenge loaded\n");
+    pr_info("=======================================================\n");
     pr_info("Benchmark started\n");
     return 0;
 }

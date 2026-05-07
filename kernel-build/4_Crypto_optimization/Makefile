@@ -1,6 +1,6 @@
 # MakeFile
 
-obj-m += crypto.o    # build hello.c as a module
+obj-m += crypto_challenge.o    # build hello.c as a module
 
 # KDIR = "/home/vass/dev/OS/linux-kernel-modules/LKM"
 # KDIR := /lib/modules/$(shell uname -r)/build
